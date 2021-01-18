@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="/static/css/salon.css">
+    <title>Zadaca 5.1. - Hair Salon</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Početak Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hairdresser Hans</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Our service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Make an appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About us</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+          </div>
+      </nav>
+      <!-- Kraj Navbar -->
+      <!-- Početak Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/static/img/hair-salon/slika1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/img/hair-salon/slika2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/img/hair-salon/slika3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+      </div>
+      <!-- Kraj Carousel -->
+      <!-- Početak Card -->
+      <h2 class="service">Our service</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="col">
+            <div class="card h-100">
+              <h5 class="card-title">Styling</h5>
+              <img src="/static/img/hair-salon/slika6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <h5 class="card-title">Coloring</h5>
+              <img src="/static/img/hair-salon/slika7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <h5 class="card-title">Haircuts</h5>
+              <img src="/static/img/hair-salon/slika4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Kraj Card -->
+      <!-- Početak Appointment -->
+      <h2 class="service">Make an appointment</h2>
+      <div class="appointment">
+
+      <!-- Početak Input -->
+        <div class="in-app">
+          <form class="row g-3">
+            <div class="col-md-7">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="First and last name">
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Phone number">
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Date">
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control in-veliki" id="inputCity" placeholder="Other info (haircut wishes ect.)">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree that Hans is the best friseur
+                </label>
+              </div>
+            </div>
+            <div class="col-12 gumb">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+
+      <!-- Kraj Input -->
+      <!-- Početak tablice -->
+      <div class="tablica">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Working hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Monday</th>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Tuseday</th>
+              <td>10.00-18.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td>12.00-20.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>8.00-16.00</td>
+            </tr>
+            <tr>
+              <th scope="row">Sunday</th>
+              <td>8.00-12.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="paragraf">* We don't work on holidays</p>
+      </div>
+      <!-- Kraj tablice -->
+      </div>
+      <!-- Kraj Appointment -->
+      <!-- Početak FAQ -->
+      <h2 class="service">FAQ</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Do you have gift certificates?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Can I bring my pet along?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What awards did you receive so far?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Kraj FAQ -->
+
+
+        <!-- Gumb koji pokreće modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          About us
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">About us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Uspiješno dodan modal
+              </div>
+              <div>
+                <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM3Ni4xNTUgMzc2LjE1NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMTk0LjUyNCwxNTAuMzEzYy0yMy4yMzctMzQuODM5LTkuMjk1LTEzNC43Ni0zMC4yMDMtMTQwLjc4NUMxNDUuNzM3LDMuOTQ3LDg4LjEwNSw0Mi4wNTUsNTkuNzY0LDkyLjcwNSAgICBDMzEuNDEzLDE0My4zNi0zLjQzMiwyMTkuMDg2LDY3LjIwMywyNjYuOTYyYzM4LjU1OCwyOS43MjktMTEuMTQ2LDQzLjY3My0xOS45ODUsMTkuOTc5Yy0wLjgyMyw0OC4xOTEsNDYuNTE2LDQ5LjQzLDUzLjQ0LDE1LjMzMiAgICBjNC44MTYtMjMuNzQtMjQuMDM3LTczLjU0My0zMi45ODgtOTcuNTg1Yy0yMS44NDgtNTguNTQzLDQyLjc0NC0xMzcuMDgzLDQyLjc0NC0xMzcuMDgzcy01Ny42Miw5NC44MDEtMzQuMzg5LDE0MC44MDkgICAgYzc5LjQ2OSwxMTcuMDk4LDI2LjU3MSwxMTQuMzA4LDYuMDM3LDEyOC4yNjFjNzcuNjA2LDMuNzE0LDEwNC4yODItNjQuNzI2LDEwOC43NDMtNzMuODkzYzEwLjIxMS0yNy40MTgsMy45NC03Ni4yMS0yMS4zODEtOTkuNDMgICAgYy02LjAzNy01LjM0OC0xMS42MTMsMS4xNTYtMzIuNjQ0LDBjLTIxLjAzLTEuMTc0LTkuNjQtMjAuOTE0LTkuNjQtMjAuOTE0cy03LjI1Ny02LjE2LTcuNDM4LTguODI4ICAgIGMtMC4xNzUtMi42NjMsNi40OTMtNC42NDcsNi40OTMtNC42NDdzLTYuNTA0LTMuNDkyLTYuOTY2LTYuNTA0Yy0wLjQ1NS0zLjA0Miw2Ljk4My0xMC4yNDEsNi45ODMtMTAuMjQxICAgIHMtOS44Mi00LjUzMS0xMC4wMDEtOS4wNjJjLTAuMTc1LTQuNTMsMTAuNzE0LTEyLjAwNCwyMS4xNDItMzMuNjgzYzcuODk0LTE2LjM4Myw3LjQzOC00My42NzgsMTkuOTc5LTQ5Ljk2ICAgIGM3LjQzOCwxMi43ODctMjMuMjIsMTEwLjM2NiwyNi45NTcsMTQxLjUwM2M5LjI4OSw1LjEwOCw2OC43NzIsNTEuNTc4LDE5Ljk3NCwxMTEuNTE2ICAgIEMyNTguMTc2LDIzNC44OTYsMjA5LjEzMiwxNzEuNzcsMTk0LjUyNCwxNTAuMzEzeiIgZmlsbD0iI2Q0MWZjYiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCTxwYXRoIGQ9Ik0yMzQuMDE2LDMuMDEzYzIzLjIzNywyNy40My0wLjQ2OCwxMzEuMDUyLDU0LjM2OCwxNjUuNDNjNzQuMzM3LDUyLjk3OSwyMS45NDEsMTI0LjM5NiwxMS4xNTIsMTQzLjU5MyAgICBjMTguNTktNTMuOTAxLDE3LjItODEuNzg2LDguMzYtMTAzLjYyMmMtOC44MzktMjEuODMxLTY0LjU4Ni03OS45MTgtNzMuNDE0LTEwOS4yMDVjLTguODI3LTI5LjI4LTExLjYxOC0xMTAuMTE1LTU0LjM5Mi05NS4zOTYgICAgYzM5LjUyNyw0OS44NjcsMTUuNTg5LDk1LjU4OSw2OS40OSwxNjQuMTYzYzUzLjkwMSw2OC41NjgsNDIuOTcyLDE2NC45NjItMi4wNzgsMTg3LjI1MyAgICBjNzAuMzg5LTkzLjE1OSw4LjM2LTE2NS44ODQtOS43NjMtMTk0LjcwNGMtOS41ODctMTUuMjQ0LTI5LjcyOS0yNy44NzMtMzEuNTk4LTYzLjE3OWMtMS44NTctMzUuMzIzLTI2LjQwMi05Ni40MzYtMzYuMjQtOTIuOTMyICAgIGMyNS41NTYsNTAuNjQ5LTAuOTM0LDEyMS43NDUsNTYuMjIsMTkwLjA1NmMzOS4wMjQsNDIuNzUsNTYuMjM2LDEzNS42ODgtOS43MzksMTgxLjY4NCAgICBjNjkuMjMzLTIuNzkxLDEwOS4xOTItNzYuNjYsMTI1LjkxNS0xMjQuNTM2YzIyLjMwMy02Ni40NDktNDEuMzYxLTEyMy41OS01My40MzYtMTQ2LjgzMyAgICBDMjc2Ljc3OCw4MS41MzUsMjcwLjI2MSwzLjQ5MSwyMzQuMDE2LDMuMDEzeiIgZmlsbD0iI2Q0MWZjYiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCTxwYXRoIGQ9Ik0zMjMuMjI5LDc4LjA1NmMtMjIuMzA0LTM1LjU0NS01My4yMzUtNTYuMzg5LTY0Ljc5Ni02NS4xNjRjMzEuNjkxLDU0LjcxMywyOS41OSw3OS4xMDYsNDEuMDkyLDk1Ljg0NiAgICBjMTEuNTAyLDE2LjcyMiwzMS43MTUsMjAuNTY5LDUwLjg4OSw4MC4zNjhDMzUxLjEwMiwxODAuNjA0LDM0NS41MzMsMTEzLjYxOCwzMjMuMjI5LDc4LjA1NnoiIGZpbGw9IiNkNDFmY2IiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBkPSJNMjI4Ljk2LDQyLjUyMmMxLjU2NCw4LjY5NCw5LjIyNSw1My42NjIsMTUuMTU2LDYyLjAzNWMtMy44MTgtNTUuMDYzLDEuNDEzLTUxLjkzNC0zLjEyOS03Mi40OTcgICAgQzIzNi40NDUsMTEuNDksMjI4LjQzNCwwLjM0NCwyMDEuOTUxLDBDMjI4LjQzNCwyMi4zMDMsMjI3LjM5NSwzMy44MjksMjI4Ljk2LDQyLjUyMnoiIGZpbGw9IiNkNDFmY2IiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" alt="Logo" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- Početak Footer -->
+      <div class="footer">
+        <div>
+          <h6><b>Contact</b></h6>
+          <p class="footer-p">
+            Frisur Hans GmbH <br>
+            Tax number: 324324234 <br>
+            Friseurgasse 5, 1020 Wien <br>
+            Phone: 0668/345435346 <br>
+            Email: friseur.hans@f-hans.com
+          </p>
+        </div>
+        <div>
+          <img  class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM3Ni4xNTUgMzc2LjE1NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMTk0LjUyNCwxNTAuMzEzYy0yMy4yMzctMzQuODM5LTkuMjk1LTEzNC43Ni0zMC4yMDMtMTQwLjc4NUMxNDUuNzM3LDMuOTQ3LDg4LjEwNSw0Mi4wNTUsNTkuNzY0LDkyLjcwNSAgICBDMzEuNDEzLDE0My4zNi0zLjQzMiwyMTkuMDg2LDY3LjIwMywyNjYuOTYyYzM4LjU1OCwyOS43MjktMTEuMTQ2LDQzLjY3My0xOS45ODUsMTkuOTc5Yy0wLjgyMyw0OC4xOTEsNDYuNTE2LDQ5LjQzLDUzLjQ0LDE1LjMzMiAgICBjNC44MTYtMjMuNzQtMjQuMDM3LTczLjU0My0zMi45ODgtOTcuNTg1Yy0yMS44NDgtNTguNTQzLDQyLjc0NC0xMzcuMDgzLDQyLjc0NC0xMzcuMDgzcy01Ny42Miw5NC44MDEtMzQuMzg5LDE0MC44MDkgICAgYzc5LjQ2OSwxMTcuMDk4LDI2LjU3MSwxMTQuMzA4LDYuMDM3LDEyOC4yNjFjNzcuNjA2LDMuNzE0LDEwNC4yODItNjQuNzI2LDEwOC43NDMtNzMuODkzYzEwLjIxMS0yNy40MTgsMy45NC03Ni4yMS0yMS4zODEtOTkuNDMgICAgYy02LjAzNy01LjM0OC0xMS42MTMsMS4xNTYtMzIuNjQ0LDBjLTIxLjAzLTEuMTc0LTkuNjQtMjAuOTE0LTkuNjQtMjAuOTE0cy03LjI1Ny02LjE2LTcuNDM4LTguODI4ICAgIGMtMC4xNzUtMi42NjMsNi40OTMtNC42NDcsNi40OTMtNC42NDdzLTYuNTA0LTMuNDkyLTYuOTY2LTYuNTA0Yy0wLjQ1NS0zLjA0Miw2Ljk4My0xMC4yNDEsNi45ODMtMTAuMjQxICAgIHMtOS44Mi00LjUzMS0xMC4wMDEtOS4wNjJjLTAuMTc1LTQuNTMsMTAuNzE0LTEyLjAwNCwyMS4xNDItMzMuNjgzYzcuODk0LTE2LjM4Myw3LjQzOC00My42NzgsMTkuOTc5LTQ5Ljk2ICAgIGM3LjQzOCwxMi43ODctMjMuMjIsMTEwLjM2NiwyNi45NTcsMTQxLjUwM2M5LjI4OSw1LjEwOCw2OC43NzIsNTEuNTc4LDE5Ljk3NCwxMTEuNTE2ICAgIEMyNTguMTc2LDIzNC44OTYsMjA5LjEzMiwxNzEuNzcsMTk0LjUyNCwxNTAuMzEzeiIgZmlsbD0iI2Q0MWZjYiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCTxwYXRoIGQ9Ik0yMzQuMDE2LDMuMDEzYzIzLjIzNywyNy40My0wLjQ2OCwxMzEuMDUyLDU0LjM2OCwxNjUuNDNjNzQuMzM3LDUyLjk3OSwyMS45NDEsMTI0LjM5NiwxMS4xNTIsMTQzLjU5MyAgICBjMTguNTktNTMuOTAxLDE3LjItODEuNzg2LDguMzYtMTAzLjYyMmMtOC44MzktMjEuODMxLTY0LjU4Ni03OS45MTgtNzMuNDE0LTEwOS4yMDVjLTguODI3LTI5LjI4LTExLjYxOC0xMTAuMTE1LTU0LjM5Mi05NS4zOTYgICAgYzM5LjUyNyw0OS44NjcsMTUuNTg5LDk1LjU4OSw2OS40OSwxNjQuMTYzYzUzLjkwMSw2OC41NjgsNDIuOTcyLDE2NC45NjItMi4wNzgsMTg3LjI1MyAgICBjNzAuMzg5LTkzLjE1OSw4LjM2LTE2NS44ODQtOS43NjMtMTk0LjcwNGMtOS41ODctMTUuMjQ0LTI5LjcyOS0yNy44NzMtMzEuNTk4LTYzLjE3OWMtMS44NTctMzUuMzIzLTI2LjQwMi05Ni40MzYtMzYuMjQtOTIuOTMyICAgIGMyNS41NTYsNTAuNjQ5LTAuOTM0LDEyMS43NDUsNTYuMjIsMTkwLjA1NmMzOS4wMjQsNDIuNzUsNTYuMjM2LDEzNS42ODgtOS43MzksMTgxLjY4NCAgICBjNjkuMjMzLTIuNzkxLDEwOS4xOTItNzYuNjYsMTI1LjkxNS0xMjQuNTM2YzIyLjMwMy02Ni40NDktNDEuMzYxLTEyMy41OS01My40MzYtMTQ2LjgzMyAgICBDMjc2Ljc3OCw4MS41MzUsMjcwLjI2MSwzLjQ5MSwyMzQuMDE2LDMuMDEzeiIgZmlsbD0iI2Q0MWZjYiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCTxwYXRoIGQ9Ik0zMjMuMjI5LDc4LjA1NmMtMjIuMzA0LTM1LjU0NS01My4yMzUtNTYuMzg5LTY0Ljc5Ni02NS4xNjRjMzEuNjkxLDU0LjcxMywyOS41OSw3OS4xMDYsNDEuMDkyLDk1Ljg0NiAgICBjMTEuNTAyLDE2LjcyMiwzMS43MTUsMjAuNTY5LDUwLjg4OSw4MC4zNjhDMzUxLjEwMiwxODAuNjA0LDM0NS41MzMsMTEzLjYxOCwzMjMuMjI5LDc4LjA1NnoiIGZpbGw9IiNkNDFmY2IiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBkPSJNMjI4Ljk2LDQyLjUyMmMxLjU2NCw4LjY5NCw5LjIyNSw1My42NjIsMTUuMTU2LDYyLjAzNWMtMy44MTgtNTUuMDYzLDEuNDEzLTUxLjkzNC0zLjEyOS03Mi40OTcgICAgQzIzNi40NDUsMTEuNDksMjI4LjQzNCwwLjM0NCwyMDEuOTUxLDBDMjI4LjQzNCwyMi4zMDMsMjI3LjM5NSwzMy44MjksMjI4Ljk2LDQyLjUyMnoiIGZpbGw9IiNkNDFmY2IiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+        </div>
+        <div>
+            <h6><b>Navigation</b></h6>
+            <p class="footer-p">
+              Our services <br>
+              Make an appointment <br>
+              FAQ <br>
+              About us
+            </p>
+        </div>
+      </div>
+      <!-- Kraj Footer -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+
+  </body>
+</html>
